@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <div id="runningCodeExample">
+
+        <h3>Virtual Server Site</h3>
+        <span >
+            <a href="#" onclick="registerWithRaaS()">Register</a>
+            &nbsp;|&nbsp;
+            <a href="#" onclick="loginWithRaaS()">Login</a>
+            &nbsp;|&nbsp;
+            <a href="#" onclick="resetPassword()">Reset Password</a>
+            &nbsp;|&nbsp;
+            <a href="#" onclick="gigya.accounts.logout();">Logout</a>
+            &nbsp;|&nbsp;
+            <a href="#" onclick="updateProfile()">Update Profile</a>
+            <br />
+            <div class="message">Not Logged.</div>
+            <span id="loggedDiv"> </span>
+        </span>
+
+        <!-- ScreenSet code begin - DO NOT DELETE!! -->
+        <div class="gigya-screen-set" id="simple-screen-set" data-width="500" data-height="600" style="display: none" data-on-pending-registration-screen="edit-profile">
+            <!-- Login Screen -->
+            <div class="gigya-screen" id="gigya-login-screen" data-width="365" data-height="565" data-caption="Login">
+                <form class="gigya-login-form">
+                    <p>User Name:</p>
+                    <input type="text" name="loginID" style="width:300">
+                    <div class="gigya-error-msg" data-bound-to="loginID"></div>
+
+                    <div class='password-div'>
+                        <p>Password:</p>
+                        <input type="password" name="password" style=" width:300">
+                       <div class="gigya-error-msg" data-bound-to="password"></div>
+                        </br>
+                        <input type="submit" value="Login" style="float: right;"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" lang="javascript" src="https://cdns.gigya.com/js/gigya.js?apikey=3_oEu0cqQ56FMYPedPTcM8sEM4rZJxY7Vj5LTmCo3c58V8JNi-KJYAJGqIWJkn0_A9">{'enableSSOToken': true}</script>
+    <script type="text/javascript" lang="javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" lang="javascript" src="javascript.js"></script>
+
+</body>
+</html>
